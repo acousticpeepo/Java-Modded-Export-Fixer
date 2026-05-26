@@ -2,11 +2,10 @@ Plugin.register('java_modded_export_fixer', {
     title: 'Java Modded Export Fixer',
     author: 'AcousticPeepo',
     icon: 'fa-file-code',
-    description: 'Update Class export for modern Java Entity Models 26.1+',
-    version: '1.0.0',
+    description: 'Fixes exports for Java mods model classes using workspace project names.',
+    version: '1.0.1',
     variant: 'both',
     tags: ["Minecraft: Java Edition"],
-    min_version: '5.1.4',
 
     onload() {
 
@@ -46,7 +45,6 @@ Plugin.register('java_modded_export_fixer', {
     onunload() {
         if (typeof Codecs !== 'undefined' && Codecs.modded_entity && this.compileListener) {
             Codecs.modded_entity.removeListener('compile', this.compileListener);
-            console.log('[Java Export Fixer] Exporter listener removed successfully.');
         }
     }
 });
