@@ -1,0 +1,22 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Blockbench & Workspace Backups
+*.orig
+*.bak
+.blockbench/
+.cursor/
+
+# Node/Build dependencies (if you add them later)
+node_modules/
+npm-debug.log*
+
+# IDE/Editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
