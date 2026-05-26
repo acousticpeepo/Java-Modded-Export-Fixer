@@ -2,7 +2,7 @@ Plugin.register('java_modded_export_fixer', {
     title: 'Java Modded Export Fixer',
     author: 'AcousticPeepo',
     icon: 'fa-file-code',
-    description: 'Update Class export for modern Java 26.1',
+    description: 'Update Class export for modern Java Entity Models 26.1+',
     version: '1.0.0',
     variant: 'both',
     tags: ["Minecraft: Java Edition"],
